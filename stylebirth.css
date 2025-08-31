@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: #ffd02a;
+  color: #212529;
+  text-align: center;
+}
+button {
+  transform: translateX(50px);
+  animation: fadeUp 1s ease;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes example {
+
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+}
+.hero {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: -2s;
+} */
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, white, #000080);
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+h1 span {
+  color: black;
+  font-weight: 100;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+#result {
+  font-size: 40px;
+  color: purple;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.hero-1 {
+  color: white;
+  padding-bottom: 0cap;
+}
+
+/* Sections */
+#message-first {
+  overflow: hidden;
+}
+.section {
+  padding: 3rem 1rem;
+}
+
+.section h2 {
+  color: rgb(13, 13, 13);
+  margin-bottom: 1rem;
+}
+.spec-msg {
+  color: white;
+  font-size: 15rem;
+}
+ul li {
+  list-style-type: none;
+}
+.gallery-wishes img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gallery-grid img:hover {
+  filter: grayscale(1);
+  transform: scale(1.03);
+}
+/*content*/
+#sec-wish #sec-out1 #sec-out2 {
+  display: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.out-1 {
+  margin: 5px;
+
+  padding: 20px;
+}
+.out-2 {
+  margin: 5px;
+
+  padding: 10px;
+}
+p {
+  align-items: center;
+}
+
+.container-section-1 {
+  background-color: #f6f490;
+  width: 100%;
+  opacity: 2px;
+  text-transform: lowercase;
+  font-style: italic;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  padding: 10px 15px;
+}
+.con-head {
+  color: black;
+}
+.container-section-2 {
+  background-color: #f6f490;
+  width: 100%;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+
+  font-style: italic;
+  padding: 10px 15px;
+}
+.container-section-1 .container-section-2:hover {
+  background: #eeeaea;
+}
+
+/*button*/
+.btn {
+  background: #fff;
+  color: linear-gradient(135deg, #3c9cdc, #f7d794);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ffd02a;
+}
+input {
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-bottom-left-radius: 3px;
+  background: linear-gradient(135deg, #eeeaea, #efc76e);
+  border-bottom: 2px solid white;
+  box-shadow: #f7d794;
+  border-radius: 2px;
+}
+.btn {
+  background-color: #000080;
+  color: white;
+  border: none;
+  padding: 19px 70px;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  background: rgb(45, 104, 157);
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .input-button {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 1301px) {
+  .gallery-grid img {
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .gallery-grid img {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
