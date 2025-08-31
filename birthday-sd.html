@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylebirth.css" />
+    <link
+      rel="stylesheet"
+      href="js\bootstrap-5.3.7-dist\js\bootstrap.min.css"
+    />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <!--hero sec-->
+    <section class="hero animate__animated animate__fadeInUp input-button
+    ">
+      <h1><span>hey!</span> Welcome😊 .....</h1>
+      <input type="text"class="form-control" id="namebirth" placeholder="...priya...." />
+
+      <button onclick="ourBirthday()"class="btn 
+      ">Next...go....</button>
+      
+    </section>
+    <!--2-->
+  
+      <div class="content" id="result"></div>
+      <h1 class="hero-1">🎉 Wishing you a day filled with smiling🌟joy & laughter ....🎂</h1>
+      <p></p>
+      <button type="button" onclick="showMessage()" class="btn">
+       🌟 Click to Celebrate 🎈
+      </button>
+    </section>
+
+    <!-- Message -->
+    <section id="message-first" class="section message" style="display: none">
+      
+    
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery">
+      <h2>Memories 📸</h2>
+      <h2>🎁 A Special Message 🎁💖 </h2>
+      <div class="gallery-grid">
+        <button type="button" onclick="showMessage1()" class="btn">
+          <img
+            id=" box1"
+            class="gift1"
+            src="./images-birthday/box1.jpeg"
+            alt="Memory 1"
+          />🎈 Click 🎈
+        </button>
+
+        <button type="button" onclick="showMessage2()"class="btn">
+          <img
+            id="box2"
+            src="./images-birthday/box2.jpeg"
+            alt="Memory 2"
+            class="gift1"
+          />🎈 Click 🎈
+        </button>
+
+        <button type="button" onclick="showMessage3()"class="btn">
+          <img
+            src="./images-birthday/box3.jpeg"
+            alt="Memory 3"
+            class="gift1"
+          />🎈 Click 🎈
+        </button>
+      </div>
+    </section>
+    <section class="section wishes" id="sec-wish" style="display: none">
+      <h2 class="con-head"
+      >Memories 📸</h2>
+      <div class="gallery-wishes">
+      
+       
+
+        </div>
+    </section>
+
+    <section class="section out-1" id="sec-out1" style="display: none">
+      <div class="container-section-1">
+      <h2 class="con-head"
+      >it's for you...
+      😊✨ </h2>
+      <div class="">
+        <p>🥳🥳🥳Birthday Wishes for Respected Person!... 
+          Make His/him Day SpecialBirthday wishes are expressions of goodwill,
+           often wishing a person happiness, love, joy, and success on their special day,
+            and can be short and
+           sweet, or more heartfelt, depending on the relationship. Common themes include
+            celebration of the individual, hopes for a bright future, and gratitude for their
+             presence. The best wishes are often personalized,
+             incorporating shared memories or acknowledging the recipient's positive qualities
+        "Happy birthday! May all your wishes come true this year..! May your birthday be the
+         start of a wonderful year!  You deserve all the happiness.Sending you 
+         birthday wishes and hope for a beautiful day!  Love and smiles always.
+         You can also add these emojis to any message for extra cuteness:  Sparkles for magic and brightness, 
+         Pink heart for love and affection,  Smiling face for happiness, and
+          Star for wishes and dreams.</p>
+      </div>
+     
+      </div>
+    </section>
+
+    <section class="section out-2" id="sec-out2" style="display: none">
+      <div class="container-section-2">
+      <h2 class="final-content"
+      >Memories 📸</h2>
+      <div class="">
+        <p class="w-content">
+          <ul class="list-content">
+            <li>💐Birthday wishes!!.... love, joy, success, and the fulfillment
+           of their dreams in the coming year. Key themes include celebrating the
+            person's individuality, expressing gratitude for their presence in one's 
+            life, and encouraging them to embrace opportunities and adventures that 
+            lie ahead.</li>
+            <li>💐Wishes often center on a new chapter of possibilities and the 
+            courage to chase their aspirations.Common themes and ideas for birthday 
+            wishes..</li>
+            <li>💐Dreams and aspirations:Wishing for dreams to come true and for the
+             courage and strength to achieve goals.</li>
+             <li>💐Looking forward to a year of 
+              new opportunities, thrilling adventures, and success in future endeavors.
+               Inspiration and growth:Encouraging the recipient to embrace the journey, 
+               learn, and become the best version of themselves.</li>
+               <li>💐Framing the birthday as a fresh start for a new chapter filled with 
+               possibilities and positivity. </li>
+               <button class="btn btn-secondary">Exit</button>
+          </ul> 
+
+            
+           
+      </p>
+      </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        🎂 “Count not the candles,💖 but the light they give. Count not the years,
+        but the life you live.” 🎂
+      </p>
+    </footer>
+
+    <script>
+      //name enter
+     function ourBirthday() {
+        let a = document.getElementById("namebirth").value;
+        let birthday = a;
+
+        let m = document.getElementById("result");
+        m.style.display = "block";
+        m.scrollIntoView({ behavior: "smooth", block: "start" }
+
+        ,document.getElementById("result" ).innerHTML = ` 🎉 Happy Birthday 🎂${birthday}`);
+      }
+   
+      
+     
+
+      //show 1st hidden first show only clicked
+      function showMessage() {
+        let message = document.getElementById("message-first");
+
+        message.style.display = "block";
+        message.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      function showMessage1() {
+        let message = document.getElementById("sec-wish");
+
+        message.style.display = "block";
+        message.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      function showMessage2() {
+        let message = document.getElementById("sec-out1");
+
+        message.style.display = "block";
+        message.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      function showMessage3() {
+        let message = document.getElementById("sec-out2");
+
+        message.style.display = "block";
+        message.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    </script>
+
+    <script scr="js\bootstrap-5.3.7-dist\js\bootstrap.min.js"></script>
+    
+  </body>
+</html>
