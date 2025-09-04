@@ -17,7 +17,8 @@ body {
   text-align: center;
 }
 button {
-  transform: translateX(50px);
+  transition:0.3 sec;
+  transform: translateX(0px);
   animation: fadeUp 1s ease;
 }
 @keyframes fadeUp {
@@ -254,3 +255,4 @@ footer {
     padding: 10px 16px;
   }
 }
+
