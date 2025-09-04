@@ -17,7 +17,7 @@ body {
   text-align: center;
 }
 button {
-  transform: translateX(50px);
+  transform: translateX(10px);
   animation: fadeUp 1s ease;
 }
 @keyframes fadeUp {
@@ -243,6 +243,7 @@ footer {
   }
   .gallery-grid img {
     width: 100%;
+    display: block;
     flex-direction: column;
     height: auto;
     object-fit: cover;
@@ -253,4 +254,6 @@ footer {
     font-size: 0.9rem;
     padding: 10px 16px;
   }
+}
+@media (min-width: 480px) {
 }
